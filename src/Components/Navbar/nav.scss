@@ -1,0 +1,32 @@
+.rf-module--nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100vw - 80px);
+  position: relative;
+  width: 1240px;
+  color: #1c2541;
+  margin-top: 2rem;
+  animation: transInTop 0.5s var(--ease) 0.2s forwards;
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+.rf-module--nav__logo {
+  min-height: 3rem;
+  min-width: 3rem;
+  aspect-ratio: 1/1;
+}
+
+
+@keyframes transInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

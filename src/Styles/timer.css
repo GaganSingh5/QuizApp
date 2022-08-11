@@ -1,0 +1,56 @@
+.timer--container {
+  position: relative;
+  padding-left: 0px;
+}
+.timer {
+  border: 2px solid #212121;
+  border-radius: 20px;
+  background-color: #D9CAB3;
+  overflow: hidden;
+}
+
+.time--bar {
+  padding: 0;
+  position: relative;
+  width: 0%;
+  height: 1rem;
+  border-radius: 20px;
+  background-color: #6D9886;
+  will-change: width;
+  transition: all 1s linear;
+}
+/* .time--bar::after{
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  background-color: #212121;
+  border-radius: 50%;
+  color: #D9CAB3;
+  display: block;
+  font-size: 0.7rem;
+} */
+
+.timer--text {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0%,-50%);
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #212121;
+  border-radius: 50%;
+  color: #D9CAB3;
+  /* display: block;
+  font-size: 0.7rem; */
+
+}
+
+/* @keyframes expand {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+} */
+

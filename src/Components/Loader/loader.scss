@@ -1,0 +1,51 @@
+.loader {
+  /* border: 2px solid #212121; */
+  height: 20px;
+  max-width: 20px;
+  border-radius: 50%;
+  background-color: #6d9886;
+  animation: move 1s ease-in-out infinite;
+}
+
+$colors: (
+  #8e90f1: 1,
+  #94cdfa: 2,
+  #e16854: 3,
+  #ee8b97: 4,
+  #5ab381: 5,
+);
+
+.loader--dot--1 {
+  background-color: #8e90f1;
+  animation-delay: 0s;
+}
+
+.loader--dot--2 {
+  background-color: #94cdfa;
+  animation-delay: 0.1s;
+}
+
+.loader--dot--3 {
+  background-color: #ee8b97;
+  animation-delay: 0.2s;
+}
+
+.loader--dot--4 {
+  background-color: #5ab381;
+  animation-delay: 0.3s;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0%, 0%);
+    // background-color: #6d9886;
+  }
+  50% {
+    transform: translate(0%, -300%);
+    // background-color: #d9cab3;
+  }
+  100% {
+    transform: translate(0%, 0%);
+    // background-color: #6d9886;
+  }
+}

@@ -1,0 +1,134 @@
+$colors: (
+  #8e90f1: 1,
+  #94cdfa: 2,
+  #e16854: 3,
+  #ee8b97: 4,
+  #5ab381: 5,
+);
+
+@each $color, $child in $colors {
+  .category--card__#{$child} {
+    border-radius: 1rem;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in;
+    will-change: background-color;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #1c2541;
+    border: 0;
+    animation: scaleIn 0.5s var(--ease) 0.6s forwards;
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  .category--card__#{$child}:hover {
+    background-color: $color;
+    -webkit-box-shadow: 5px 5px #1c25418e;
+    -moz-box-shadow: 5px 5px #1c25418e;
+    box-shadow: 5px 5px #1c25418e;
+    transition: all 0.2s linear;
+    color: #f5f5f5;
+
+    transition: all 0.2s ease-in;
+  }
+}
+
+// .card:hover {
+//   background-color: #ee8b97;
+//   -webkit-box-shadow: 5px 5px #1c25418e;
+//   -moz-box-shadow: 5px 5px #1c25418e;
+//   box-shadow: 5px 5px #1c25418e;
+// }
+
+.category__header {
+  font-weight: 700;
+  font-size: 2.5rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  font-family: "Patrick Hand", cursive;
+  animation: transIn 0.5s var(--ease) 0.4s forwards;
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.btn--primary {
+  background-color: #212121;
+  color: #f5f5f5;
+}
+
+.button {
+  border-radius: 10px;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  border: 3px solid #3c534a;
+  background-color: #f6f6f6;
+  color: #212121;
+  transition: 0.2s all linear;
+}
+
+.button:hover {
+  background-color: rgba(60, 83, 74, 0.2);
+}
+
+.button:active {
+  background-color: #3c534a;
+  color: #f6f6f6;
+}
+
+.card--shadow {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin-top: 1rem;
+  border: 1px red solid;
+  transform-origin: center top;
+  border-radius: 1rem;
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  will-change: background-color;
+}
+
+.card--shadow:hover {
+  top: 10%;
+  left: 40%;
+}
+
+.card--icon {
+  font-size: 4em;
+}
+
+.category--conatiner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100vw - 80px);
+  position: relative;
+  width: 1240px;
+  padding-top: 7vh;
+}
+
+@keyframes transIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

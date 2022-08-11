@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: min-height 0.5s linear;
+  min-height: 100vh;
+  background-color: #F6CFDF;
+}
+
+body {
+  --color-grey: #1E2528;
+  --color-darkgreen: #3A504B;
+  --color-seagreen: #0EF6BE;
+  --color-white: #F7F7F7;
+    --sans: soleil,sans-serif;
+    --titles: sculpin,sans;
+    --wide: termina,sans-serif;
+    --font-size: 18px;
+    --layout-width: 1240px;
+    --border-radius: 12px;
+    --ease: cubic-bezier(0.215,0.61,0.355,1);
+    --ease-out-back: cubic-bezier(0.085,1.735,0.285,0.995);
+    --ease-out-back-subtle: cubic-bezier(0.085,1.335,0.285,0.995);
+    --gutters: 60px;
+    --color-almond: #E1CDB5;
+    --color-clay: #e07a5f;
+    --color-blue: #3d405b;
+    --color-yellow: #f3d3a0;
+    --color-green: #81b29a;
+    --color-rose: #e3d4d0;
+    --color-grey1: #fef9f1;
+    --color-grey2: #f7f1e7;
+    --color-grey3: #f3ece6;
+    --color-grey4: #e6ddcf;
+    --color-background: #fef9f1;
+    --color-text: var(--color-black);
+    --shadow: 0 10px 20px rgba(0,0,0,.1),0 10px 100px 10px rgba(0,0,0,.125);
+    --shadow2: 0 7px 15px rgba(0,0,0,.125),0 7px 75px 7px rgba(0,0,0,.125),0 0 0 1px rgba(0,0,0,.025),0 10px 15px -10px rgba(0,0,0,.2);
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #f5f5f5;
+  background: #ee8b97;
+}
+
+::selection {
+  color: #f5f5f5;
+  background: #ee8b97;
+}
+
+#root{
+  overflow-x: hidden;
+  min-height: inherit;
+}
+
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}

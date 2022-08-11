@@ -1,0 +1,41 @@
+
+.question--module{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  max-width: calc(100vw - 40px);
+  position: relative;
+  width: 1240px;
+  flex-grow: 100%;
+  align-items: center;
+}
+
+.question--module__conatiner {
+  width: inherit;
+  height: fit-content;
+}
+
+.submit_btn {
+  color: #1c2541;
+  font-family: "Patrick Hand", cursive;
+  border-radius: var(--border-radius);
+  align-items: center;
+  background-color: #ee8b97;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1.5rem;
+  position: relative;
+  border: 0;
+  font-size: 18px;
+  transition: all 0.2s linear;
+  /* animation: transIn 0.5s var(--ease) 0.6s forwards; */
+  /* opacity: 0; */
+  /* transform: translateX(-40px); */
+}
+
+.submit_btn:hover {
+  box-shadow: 5px 5px 0px #1c25418e;
+}
